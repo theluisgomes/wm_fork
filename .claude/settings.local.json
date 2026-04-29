@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(python3 -c \"import sys,json; g=json.load\\(sys.stdin\\); [print\\(f'=== {k} ===\\\\n{v[\\\\\"content\\\\\"]}'\\) for k,v in g.get\\('files',{}\\).items\\(\\)]\")",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm init *)",
+      "Bash(npm install *)"
+    ]
+  }
+}

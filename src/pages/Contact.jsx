@@ -1,0 +1,41 @@
+import Button from '../components/Button.jsx';
+import OrbitCanvas from '../components/OrbitCanvas.jsx';
+
+export default function Contact() {
+  return (
+    <>
+      <section className="page-hero">
+        <div className="page-grid-bg" aria-hidden="true" />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <span className="eyebrow">Contato</span>
+          <h1 className="page-title" style={{ marginTop: 'var(--s5)' }}>
+            Vamos transformar dados em direção.
+          </h1>
+          <p className="page-intro">
+            Conte um pouco sobre o desafio. A conversa começa pelo problema de negócio, não pela ferramenta.
+          </p>
+        </div>
+      </section>
+
+      <section id="contato" aria-labelledby="contato-h">
+        <div className="contato-glow" aria-hidden="true" />
+        <OrbitCanvas className="contato-orbit-wrap" />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <span className="eyebrow">Vamos conversar</span>
+          <h2 id="contato-h" className="contato-title">
+            Transformamos dados
+            <br />
+            <em>em direção.</em>
+          </h2>
+          <p className="contato-sub">
+            Transformamos dados, sinais de mercado e percepção em posicionamento e crescimento institucional.
+          </p>
+          <div className="contato-acts">
+            <Button href="mailto:contato@wisemetrics.com.br">Fale com a gente</Button>
+            <Button to="/portfolio" variant="ghost">Ver portfolio</Button>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
