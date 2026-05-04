@@ -41,7 +41,7 @@ export default function HeroCanvas() {
     const uniforms = {
       uTime: { value: 0 },
       uMouse: { value: new THREE.Vector2(0, 0) },
-      uSize: { value: 2.2 * (window.devicePixelRatio || 1) },
+      uSize: { value: 2.95 * (window.devicePixelRatio || 1) },
       uAccent: { value: new THREE.Color('#1db5a3') },
       uFg: { value: new THREE.Color('#ece7dc') },
     };
@@ -69,7 +69,7 @@ export default function HeroCanvas() {
           vDist = d;
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
           gl_Position = projectionMatrix * mv;
-          gl_PointSize = uSize * (1.0 + influence * 1.6) * (20.0 / -mv.z);
+          gl_PointSize = uSize * (1.0 + influence * 1.6) * (23.0 / -mv.z);
         }
       `,
       fragmentShader: `
@@ -82,9 +82,9 @@ export default function HeroCanvas() {
           float r = length(uv);
           if(r > 0.5) discard;
           float a = smoothstep(0.5, 0.0, r);
-          float mixFactor = smoothstep(4.5, 0.0, vDist) * 0.9 + smoothstep(0.2, 0.6, vWave) * 0.3;
-          vec3 col = mix(uFg * 0.35, uAccent, clamp(mixFactor, 0.0, 1.0));
-          gl_FragColor = vec4(col, a * 0.85);
+          float mixFactor = smoothstep(5.2, 0.0, vDist) * 0.92 + smoothstep(0.15, 0.55, vWave) * 0.42 + 0.1;
+          vec3 col = mix(uFg * 0.55, uAccent * 1.08, clamp(mixFactor, 0.0, 1.0));
+          gl_FragColor = vec4(col, a * 0.98);
         }
       `,
     });
