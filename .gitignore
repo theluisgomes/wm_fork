@@ -18,5 +18,9 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
+# Accidentally committed installers (GitHub 100MB limit)
+*.rpm
+google-chrome-stable_current_x86_64.rpm
+
 # Cursor hook local state (machine-specific)
 .cursor/hooks/state/
