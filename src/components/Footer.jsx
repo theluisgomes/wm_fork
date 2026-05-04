@@ -29,11 +29,7 @@ export default function Footer() {
             <Link to="/" className="nav-brand foot-wordmark" aria-label="Wisemetrics">
               <Logo />
             </Link>
-            <p className="foot-tagline">
-              Estratégia, dados e produto
-              <br />
-              numa só lógica.
-            </p>
+            <p className="foot-tagline">Data into Action</p>
           </div>
           <div className="foot-cta-mini">
             <span className="foot-cta-label">Pronto para começar?</span>

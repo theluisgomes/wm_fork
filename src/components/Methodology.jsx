@@ -30,35 +30,29 @@ export default function Methodology({ number = '03' }) {
             titleId="meto-h"
           />
         </div>
-        <div className="meto-tabs" role="tablist">
+        <div className="method-flow" role="group" aria-label="Etapas da metodologia">
           {methodology.map((step, index) => (
             <button
               key={step.label}
-              className={`meto-tab${active === index ? ' on' : ''}`}
-              role="tab"
-              aria-selected={active === index}
+              type="button"
+              className={`flow-step${active === index ? ' on' : ''}`}
+              aria-current={active === index ? 'step' : undefined}
+              aria-label={`${step.label}. ${step.caption}`}
               onClick={() => setActive(index)}
             >
-              {String(index + 1).padStart(2, '0')} — {step.label}
-            </button>
-          ))}
-        </div>
-        <div className="method-flow" aria-hidden="true">
-          {methodology.map((step, index) => (
-            <div key={step.label} className={`flow-step${active === index ? ' on' : ''}`}>
               <FlowIcon index={index} />
               <div>
                 <b>{step.label}</b>
                 <span>{step.caption}</span>
               </div>
-            </div>
+            </button>
           ))}
         </div>
         <div className="meto-panels">
-          <div className="meto-panel on" role="tabpanel">
+          <div className="meto-panel on" role="region" id="meto-panel" aria-labelledby="meto-step-title">
             <div>
               <p className="meto-step-n">{String(active + 1).padStart(2, '0')} / 04</p>
-              <h3 className="meto-step-label">{activeStep.label}</h3>
+              <h3 id="meto-step-title" className="meto-step-label">{activeStep.label}</h3>
               <p className="meto-step-tl">{activeStep.timeline}</p>
               <p className="meto-step-desc">{activeStep.description}</p>
             </div>

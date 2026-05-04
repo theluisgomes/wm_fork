@@ -20,9 +20,8 @@ export default function Home() {
         <div className="hero-wrap">
           <p className="eyebrow hero-eyebrow"><span className="dot" />Estratégia · Dados · Produto</p>
           <h1 className="hero-title">
-            <div className="hl"><span>Estratégia, dados</span></div>
-            <div className="hl"><span>e produto</span></div>
-            <div className="hl"><em>numa só lógica.</em></div>
+            <div className="hl"><span>Data into</span></div>
+            <div className="hl"><em>Action</em></div>
           </h1>
           <div className="hero-foot">
             <p className="hero-sub">
