@@ -36,6 +36,21 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <section className="container" style={{ paddingBottom: 'var(--s12)' }}>
+        <p id="privacidade" className="page-intro" style={{ marginBottom: 'var(--s5)' }}>
+          <strong>Política de privacidade.</strong>{' '}
+          Solicitações relacionadas à LGPD e ao tratamento de dados:{' '}
+          <a href="mailto:contato@wisemetrics.com.br" className="accent-link">
+            contato@wisemetrics.com.br
+          </a>
+          .
+        </p>
+        <p id="termos" className="page-intro">
+          <strong>Termos de uso.</strong>{' '}
+          Projetos e entregas são regidos por contratos específicos com cada cliente. Dúvidas gerais pelo mesmo e-mail.
+        </p>
+      </section>
     </>
   );
 }

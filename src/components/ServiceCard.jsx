@@ -30,7 +30,7 @@ function ServiceIcon({ id }) {
 
 export default function ServiceCard({ service }) {
   return (
-    <div className="atu-card">
+    <div id={service.id} className="atu-card">
       <OrbitCanvas className="atu-card-canvas" lazy />
       <div className="service-picto" aria-hidden="true">
         <ServiceIcon id={service.id} />

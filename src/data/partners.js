@@ -13,7 +13,7 @@ export const partners = [
 ];
 
 export const certifications = [
-  'Membros do Instituto 12 (RJ)',
-  'Google Analytics Certified',
-  'Google Looker Studio Certified',
+  { id: 'institute12', label: 'Membros do Instituto 12 (RJ)' },
+  { id: 'googleAnalytics', label: 'Google Analytics Certified' },
+  { id: 'googleLooker', label: 'Google Looker Studio Certified' },
 ];

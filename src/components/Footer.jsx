@@ -44,27 +44,27 @@ export default function Footer() {
           <div className="foot-col">
             <div className="foot-col-label">Serviços</div>
             <ul>
-              <li><Link to="/">Strategy & Growth</Link></li>
-              <li><Link to="/">Data Insights & Intelligence</Link></li>
-              <li><Link to="/">Product Development</Link></li>
-              <li><Link to="/sobre">Metodologia</Link></li>
+              <li><Link to="/#strategy">Strategy & Growth</Link></li>
+              <li><Link to="/#data">Data Insights & Intelligence</Link></li>
+              <li><Link to="/#product">Product Development</Link></li>
+              <li><Link to="/sobre#meto">Metodologia</Link></li>
             </ul>
           </div>
           <div className="foot-col">
             <div className="foot-col-label">Trabalhos</div>
             <ul>
-              <li><Link to="/portfolio">Penalty + M+C Saatchi</Link></li>
-              <li><Link to="/portfolio">Radar ATMMOS</Link></li>
-              <li><Link to="/portfolio">O Boticário + ALMAPBBDO</Link></li>
-              <li><Link to="/sobre">Parceiros</Link></li>
+              <li><Link to="/portfolio#penalty">Penalty + M+C Saatchi</Link></li>
+              <li><Link to="/portfolio#atmmos">Radar ATMMOS</Link></li>
+              <li><Link to="/portfolio#boticario">O Boticário + ALMAPBBDO</Link></li>
+              <li><Link to="/sobre#parceiros">Parceiros</Link></li>
             </ul>
           </div>
           <div className="foot-col">
             <div className="foot-col-label">Empresa</div>
             <ul>
-              <li><Link to="/sobre">Equipe</Link></li>
-              <li><Link to="/sobre">Ecossistema</Link></li>
-              <li><Link to="/">Nossa visão</Link></li>
+              <li><Link to="/sobre#equipe">Equipe</Link></li>
+              <li><Link to="/sobre#parceiros">Ecossistema</Link></li>
+              <li><Link to="/sobre">Nossa visão</Link></li>
             </ul>
             <div className="foot-certs" style={{ marginTop: 'var(--s5)' }}>
               <span className="foot-cert">Google Analytics Certified</span>
@@ -94,8 +94,8 @@ export default function Footer() {
             </a>
           </div>
           <div className="foot-legal">
-            <Link to="/contato">Política de Privacidade</Link>
-            <Link to="/contato">Termos de Uso</Link>
+            <Link to="/contato#privacidade">Política de Privacidade</Link>
+            <Link to="/contato#termos">Termos de Uso</Link>
           </div>
         </div>
       </div>

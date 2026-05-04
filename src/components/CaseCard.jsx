@@ -10,7 +10,7 @@ function ProofIcon() {
 
 export default function CaseCard({ item, index, onImageClick }) {
   return (
-    <div className={`case-row${item.reversed ? ' rev' : ''}`} data-case={index}>
+    <div id={item.id} className={`case-row${item.reversed ? ' rev' : ''}`} data-case={index}>
       <div aria-hidden="true" className="case-ghost">{String(index + 1).padStart(2, '0')}</div>
       <div className="container">
         <div className="case-inner">

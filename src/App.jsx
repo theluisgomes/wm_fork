@@ -8,11 +8,34 @@ const Portfolio = lazy(() => import('./pages/Portfolio.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return undefined;
+    }
+
+    const id = decodeURIComponent(hash.slice(1));
+    const tryScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'instant', block: 'start' });
+        return true;
+      }
+      return false;
+    };
+
+    if (!tryScroll()) {
+      const t1 = window.setTimeout(tryScroll, 120);
+      const t2 = window.setTimeout(tryScroll, 400);
+      return () => {
+        window.clearTimeout(t1);
+        window.clearTimeout(t2);
+      };
+    }
+    return undefined;
+  }, [pathname, hash]);
 
   return null;
 }
