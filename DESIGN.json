@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-04T19:08:00.000Z",
+  "title": "Design System: Wisemetrics",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Observation Black",
+        "canonical": "#060a12",
+        "tonalRamp": ["#030509", "#060a12", "#0c121d", "#141b2a", "#2a303b", "#5d5541", "#8a8067", "#ece7dc"]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Strategic Signal Cyan",
+        "canonical": "#1db5a3",
+        "tonalRamp": ["#072a26", "#0d4c46", "#116f67", "#179286", "#1db5a3", "#42ccbb", "#8de0d6", "#d5f3ef"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines and strategic claims." },
+      "body": { "displayName": "Body", "purpose": "Core explanatory copy and narrative sections." },
+      "label": { "displayName": "Label", "purpose": "Taxonomy, metadata, and micro UI labels." }
+    },
+    "shadows": [
+      {
+        "name": "accent-glow",
+        "value": "0 0 0 1px rgba(29,181,163,.25), 0 0 24px rgba(29,181,163,.25)",
+        "purpose": "Primary action emphasis."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.16,1,0.3,1)",
+        "purpose": "Default transitions for hover and state changes."
+      }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "1024px" },
+      { "name": "mobile", "value": "768px" },
+      { "name": "compact", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA for conversion actions.",
+      "html": "<button class=\"ds-btn-primary\">Fale com a gente</button>",
+      "css": ".ds-btn-primary{background:#1db5a3;color:#021714;border:1px solid transparent;border-radius:999px;padding:12px 24px;font:500 14px/1.2 \"Inter Tight\",\"Inter\",sans-serif;display:inline-flex;align-items:center;gap:8px;transition:transform .2s cubic-bezier(0.16,1,0.3,1),background .2s}.ds-btn-primary:hover{background:#42ccbb;transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:2px solid #42ccbb;outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action with low visual weight.",
+      "html": "<button class=\"ds-btn-ghost\">Ver portfolio</button>",
+      "css": ".ds-btn-ghost{background:transparent;color:#ece7dc;border:1px solid rgba(236,231,220,.16);border-radius:999px;padding:12px 24px;font:500 14px/1.2 \"Inter Tight\",\"Inter\",sans-serif;transition:background .2s,border-color .2s}.ds-btn-ghost:hover{background:#141b2a;border-color:#8a8067}.ds-btn-ghost:focus-visible{outline:2px solid #42ccbb;outline-offset:2px}"
+    },
+    {
+      "name": "Top Navigation CTA",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Compact contact action in fixed header.",
+      "html": "<a class=\"ds-nav-cta\" href=\"#\">Contato</a>",
+      "css": ".ds-nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:8px 20px;border:1px solid rgba(29,181,163,.35);border-radius:999px;color:#1db5a3;font:500 14px/1 \"Inter Tight\",\"Inter\",sans-serif;text-decoration:none;transition:background .2s,border-color .2s}.ds-nav-cta:hover{background:rgba(29,181,163,.1);border-color:#1db5a3}.ds-nav-cta:focus-visible{outline:2px solid #42ccbb;outline-offset:2px}"
+    },
+    {
+      "name": "Base Card Surface",
+      "kind": "card",
+      "refersTo": "card-base",
+      "description": "Core dark container for service and content modules.",
+      "html": "<article class=\"ds-card\"><h3>Data Insights & Intelligence</h3><p>Capturamos sinais onde outros veem silencio.</p></article>",
+      "css": ".ds-card{background:#141b2a;border:1px solid rgba(236,231,220,.08);border-radius:8px;padding:24px;color:#ece7dc}.ds-card h3{margin:0 0 12px;font:400 28px/1.2 \"Fraunces\",\"Noto Serif\",serif;letter-spacing:-.02em}.ds-card p{margin:0;color:#8a8067;font:400 14px/1.7 \"Inter Tight\",\"Inter\",sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Signal Engine in the Dark",
+    "overview": "This interface feels like a strategic control room, not a startup dashboard and not a decorative agency portfolio. Darkness carries authority and focus, while restrained cyan accents identify action, emphasis, and analytical confidence. The visual system prioritizes interpretation over spectacle.",
+    "keyCharacteristics": [
+      "Deliberate dark surfaces with warm, readable neutrals",
+      "Accent color used as signal, not decoration",
+      "Editorial serif hierarchy paired with operational sans + mono labels",
+      "Border-led depth and tonal layering instead of heavy shadow styling"
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Accent cyan is the only saturated control color on primary surfaces.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Fraunces speaks direction and meaning. Inter/Mono speak operation and structure.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces start flat. Lift appears only when state changes justify it.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do preserve the signal over noise balance.",
+      "Do keep accent usage intentional and scarce.",
+      "Do maintain strong text contrast.",
+      "Do preserve serif/sans role separation."
+    ],
+    "donts": [
+      "Don't build generic SaaS landing pages with hero-metric dashboards and purple gradients.",
+      "Don't replicate cookie-cutter agency sites with parallax hero images and \"we're creative\" copy.",
+      "Don't drift into consulting sites that feel like PowerPoint decks (McKinsey blue, stock photography grids).",
+      "Don't apply glassmorphism-heavy dark themes with neon accents (crypto/Web3 aesthetic)."
+    ]
+  }
+}

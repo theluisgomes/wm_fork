@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { methodology } from '../data/methodology.js';
+import { getMethodology } from '../data/methodology.js';
 import AmbientCanvas from './AmbientCanvas.jsx';
 import SectionHead from './SectionHead.jsx';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 function FlowIcon({ index }) {
   const icons = [
@@ -14,6 +15,8 @@ function FlowIcon({ index }) {
 }
 
 export default function Methodology({ number = '03' }) {
+  const { lang, t } = useI18n();
+  const methodology = getMethodology(lang);
   const [active, setActive] = useState(0);
   const activeStep = methodology[active];
 
@@ -24,13 +27,13 @@ export default function Methodology({ number = '03' }) {
         <div className="meto-head">
           <SectionHead
             number={number}
-            eyebrow="Como trabalhamos"
-            title="Um processo que conecta as pontas."
-            subtitle="Cada frente tem seu conjunto de ferramentas, mas elas conversam entre si, adaptadas ao momento de cada cliente."
+            eyebrow={t.methodology.eyebrow}
+            title={t.methodology.title}
+            subtitle={t.methodology.subtitle}
             titleId="meto-h"
           />
         </div>
-        <div className="method-flow" role="group" aria-label="Etapas da metodologia">
+        <div className="method-flow" role="group" aria-label={t.methodology.groupLabel}>
           {methodology.map((step, index) => (
             <button
               key={step.label}

@@ -1,5 +1,6 @@
-import { certifications, partners } from '../data/partners.js';
+import { getCertifications, partners } from '../data/partners.js';
 import AmbientCanvas from './AmbientCanvas.jsx';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 function CertBadgeIcon({ id }) {
   const svgProps = {
@@ -44,25 +45,27 @@ function CertBadgeIcon({ id }) {
 }
 
 export default function Partners() {
+  const { lang, t } = useI18n();
+  const certifications = getCertifications(lang);
   const repeated = [...partners, ...partners];
 
   return (
-    <section id="parceiros" aria-label="Parceiros">
+    <section id="parceiros" aria-label={t.partners.section}>
       <AmbientCanvas className="ambient-canvas parc-canvas-wrap" density={30} />
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="parc-head">
-          <span className="eyebrow">Ecossistema</span>
+          <span className="eyebrow">{t.partners.eyebrow}</span>
           <h2 className="parc-title">
-            Quem confia na
+            {t.partners.title1}
             <br />
-            Wisemetrics.
+            {t.partners.title2}
           </h2>
         </div>
       </div>
       <div className="parc-clients">
         <div className="container parc-clients-top">
           <p id="parc-clients-heading" className="parc-clients-lead">
-            Marcas & instituições
+            {t.partners.brands}
           </p>
         </div>
         <div className="parc-marq-band" role="region" aria-labelledby="parc-clients-heading">
@@ -79,7 +82,7 @@ export default function Partners() {
       </div>
       <div className="container">
         <div className="certs-block">
-          <p className="certs-lead">Credenciais</p>
+          <p className="certs-lead">{t.partners.credentials}</p>
           <ul className="certs">
             {certifications.map((item) => (
               <li className="cert" key={item.id}>

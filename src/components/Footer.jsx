@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button.jsx';
 import OrbitCanvas from './OrbitCanvas.jsx';
 import Logo from './Logo.jsx';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 function SocialIcon({ type }) {
   if (type === 'instagram') {
@@ -20,6 +21,8 @@ function SocialIcon({ type }) {
 }
 
 export default function Footer() {
+  const { t, paths } = useI18n();
+
   return (
     <footer>
       <OrbitCanvas className="foot-canvas" variant="footer" />
@@ -32,39 +35,39 @@ export default function Footer() {
             <p className="foot-tagline">Data into Action</p>
           </div>
           <div className="foot-cta-mini">
-            <span className="foot-cta-label">Pronto para começar?</span>
-            <Button href="mailto:contato@wisemetrics.com.br">Fale com a gente</Button>
-            <Button to="/portfolio" variant="ghost">
-              Ver portfolio
+            <span className="foot-cta-label">{t.footer.ready}</span>
+            <Button href="mailto:contato@wisemetrics.com.br">{t.footer.talk}</Button>
+            <Button to={paths.portfolio} variant="ghost">
+              {t.footer.seePortfolio}
             </Button>
           </div>
         </div>
 
-        <nav className="foot-nav" aria-label="Mapa do site">
+        <nav className="foot-nav" aria-label={t.footer.sitemap}>
           <div className="foot-col">
-            <div className="foot-col-label">Serviços</div>
+            <div className="foot-col-label">{t.footer.services}</div>
             <ul>
               <li><Link to="/#strategy">Strategy & Growth</Link></li>
               <li><Link to="/#data">Data Insights & Intelligence</Link></li>
               <li><Link to="/#product">Product Development</Link></li>
-              <li><Link to="/sobre#meto">Metodologia</Link></li>
+              <li><Link to={`${paths.about}#meto`}>{t.footer.methodology}</Link></li>
             </ul>
           </div>
           <div className="foot-col">
-            <div className="foot-col-label">Trabalhos</div>
+            <div className="foot-col-label">{t.footer.work}</div>
             <ul>
               <li><Link to="/portfolio#penalty">Penalty + M+C Saatchi</Link></li>
               <li><Link to="/portfolio#atmmos">Radar ATMMOS</Link></li>
               <li><Link to="/portfolio#boticario">O Boticário + ALMAPBBDO</Link></li>
-              <li><Link to="/sobre#parceiros">Parceiros</Link></li>
+              <li><Link to={`${paths.about}#parceiros`}>{t.partners.section}</Link></li>
             </ul>
           </div>
           <div className="foot-col">
-            <div className="foot-col-label">Empresa</div>
+            <div className="foot-col-label">{t.footer.company}</div>
             <ul>
-              <li><Link to="/sobre#equipe">Equipe</Link></li>
-              <li><Link to="/sobre#parceiros">Ecossistema</Link></li>
-              <li><Link to="/sobre">Nossa visão</Link></li>
+              <li><Link to={`${paths.about}#equipe`}>{t.footer.team}</Link></li>
+              <li><Link to={`${paths.about}#parceiros`}>{t.footer.ecosystem}</Link></li>
+              <li><Link to={paths.about}>{t.footer.vision}</Link></li>
             </ul>
             <div className="foot-certs" style={{ marginTop: 'var(--s5)' }}>
               <span className="foot-cert">Google Analytics Certified</span>
@@ -73,10 +76,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="foot-col">
-            <div className="foot-col-label">Contato</div>
+            <div className="foot-col-label">{t.footer.contact}</div>
             <ul>
               <li><a href="mailto:contato@wisemetrics.com.br" className="accent-link">contato@wisemetrics.com.br</a></li>
-              <li><Link to="/contato">Página de contato</Link></li>
+              <li><Link to={paths.contact}>{t.footer.contactPage}</Link></li>
               <li><a href="https://www.linkedin.com/company/wisemetrics" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a href="https://instagram.com/wisemetrics" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             </ul>
@@ -84,8 +87,8 @@ export default function Footer() {
         </nav>
 
         <div className="foot-bottom">
-          <p className="foot-copy">© 2026 <strong>Wisemetrics</strong>. Todos os direitos reservados.</p>
-          <div className="foot-socials" aria-label="Redes sociais">
+          <p className="foot-copy">© 2026 <strong>Wisemetrics</strong>. {t.footer.rights}</p>
+          <div className="foot-socials" aria-label={t.footer.socials}>
             <a href="https://www.linkedin.com/company/wisemetrics" target="_blank" rel="noopener noreferrer" className="foot-social-link" aria-label="LinkedIn">
               <SocialIcon type="linkedin" />
             </a>
@@ -94,8 +97,8 @@ export default function Footer() {
             </a>
           </div>
           <div className="foot-legal">
-            <Link to="/contato#privacidade">Política de Privacidade</Link>
-            <Link to="/contato#termos">Termos de Uso</Link>
+            <Link to={`${paths.contact}#privacidade`}>{t.footer.privacy}</Link>
+            <Link to={`${paths.contact}#termos`}>{t.footer.terms}</Link>
           </div>
         </div>
       </div>

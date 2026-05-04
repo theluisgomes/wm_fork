@@ -49,8 +49,10 @@ export default function App() {
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="sobre" element={<About />} />
+            <Route path="about" element={<About />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="contato" element={<Contact />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </Suspense>

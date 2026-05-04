@@ -1,3 +1,5 @@
+import { useI18n } from '../i18n/I18nContext.jsx';
+
 function ProofIcon() {
   return (
     <svg viewBox="0 0 32 32" aria-hidden="true">
@@ -9,6 +11,8 @@ function ProofIcon() {
 }
 
 export default function CaseCard({ item, index, onImageClick }) {
+  const { t } = useI18n();
+
   return (
     <div id={item.id} className={`case-row${item.reversed ? ' rev' : ''}`} data-case={index}>
       <div aria-hidden="true" className="case-ghost">{String(index + 1).padStart(2, '0')}</div>
@@ -22,7 +26,7 @@ export default function CaseCard({ item, index, onImageClick }) {
                   className="gi"
                   key={image.src}
                   onClick={() => onImageClick(item.images, imageIndex)}
-                  aria-label={`Ampliar ${image.alt}`}
+                  aria-label={`${t.lightbox.zoom} ${image.alt}`}
                 >
                   <img src={image.src} alt={image.alt} loading="lazy" />
                   <div className="gi-ov"><span className="gi-z">↗</span></div>

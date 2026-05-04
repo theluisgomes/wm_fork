@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { cases } from '../data/cases.js';
-import { services } from '../data/services.js';
+import { getCases } from '../data/cases.js';
+import { getServices } from '../data/services.js';
 import AmbientCanvas from '../components/AmbientCanvas.jsx';
 import Button from '../components/Button.jsx';
 import CaseCard from '../components/CaseCard.jsx';
@@ -8,8 +8,12 @@ import HeroCanvas from '../components/HeroCanvas.jsx';
 import Methodology from '../components/Methodology.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 export default function Home() {
+  const { lang, t, paths } = useI18n();
+  const cases = getCases(lang);
+  const services = getServices(lang);
   const featuredCases = cases.slice(0, 2);
 
   return (
@@ -18,18 +22,18 @@ export default function Home() {
         <HeroCanvas />
         <div className="hero-grid-bg" aria-hidden="true" />
         <div className="hero-wrap">
-          <p className="eyebrow hero-eyebrow"><span className="dot" />Estratégia · Dados · Produto</p>
+          <p className="eyebrow hero-eyebrow"><span className="dot" />{t.home.eyebrow}</p>
           <h1 className="hero-title">
             <div className="hl"><span>Data into</span></div>
             <div className="hl"><em>Action</em></div>
           </h1>
           <div className="hero-foot">
             <p className="hero-sub">
-              Transformamos dados, comportamento e sinais de mercado através de Inteligência Artificial, gerando direção estratégica e produtos digitais que operam por você.
+              {t.home.sub}
             </p>
             <div className="hero-cta-g">
-              <Button to="/portfolio">Ver cases</Button>
-              <Button to="/contato" variant="ghost">Fale conosco</Button>
+              <Button to={paths.portfolio}>{t.home.seeCases}</Button>
+              <Button to={paths.contact} variant="ghost">{t.home.talk}</Button>
             </div>
           </div>
         </div>
@@ -42,20 +46,16 @@ export default function Home() {
       <section id="problem" aria-labelledby="prob-h">
         <AmbientCanvas className="ambient-canvas problem-canvas-wrap" density={34} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <SectionHead number="01" eyebrow="O problema" subtitle="Densidade é permitida. Ruído, não." />
+          <SectionHead number="01" eyebrow={t.home.problemEyebrow} subtitle={t.home.problemSubtitle} />
           <div className="prob-grid">
             <div>
               <h2 id="prob-h" className="prob-h">
-                Dados não faltam.
+                {t.home.problemTitle1}
                 <br />
-                Direção, sim.
+                {t.home.problemTitle2}
               </h2>
               <div className="circles">
-                {[
-                  'Dado sem leitura é ruído',
-                  'Informação sem contexto não decide',
-                  'Repertório é o que transforma análise em ação',
-                ].map((text, index) => (
+                {t.home.bullets.map((text, index) => (
                   <div className="circle-card" key={text}>
                     <div className="circle-n" aria-hidden="true">{index + 1}</div>
                     <span className="circle-txt">{text}</span>
@@ -64,9 +64,9 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="prob-r-title">O gargalo é de interpretação, não de volume.</h3>
+              <h3 className="prob-r-title">{t.home.problemRightTitle}</h3>
               <p className="prob-r-body">
-                Empresas acumulam dados mas travam na hora de agir. O que falta é a capacidade de articular fontes e processar em escala. Com inteligência artificial, convertemos complexidade em direção estratégica. A Wisemetrics existe nesse espaço, onde Machine Learning encontra perspicácia, e código encontra narrativa.
+                {t.home.problemRightBody}
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
       <section id="atuacoes" aria-labelledby="atu-h">
         <div className="container">
-          <SectionHead number="02" eyebrow="Atuação" title="Três frentes. Uma lógica." titleId="atu-h" />
+          <SectionHead number="02" eyebrow={t.home.actionEyebrow} title={t.home.actionTitle} titleId="atu-h" />
           <div className="atu-grid">
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
@@ -89,9 +89,9 @@ export default function Home() {
       <section id="cases" aria-labelledby="cases-h">
         <div className="container">
           <div className="cases-head">
-            <SectionHead number="04" eyebrow="Portfolio" title="A metodologia em prática." titleId="cases-h" />
+            <SectionHead number="04" eyebrow={t.home.portfolioEyebrow} title={t.home.portfolioTitle} titleId="cases-h" />
             <p className="page-intro">
-              Uma amostra dos projetos em que estratégia, dados e produto aparecem como uma mesma disciplina.
+              {t.home.portfolioIntro}
             </p>
           </div>
         </div>
@@ -99,8 +99,8 @@ export default function Home() {
           <CaseCard key={item.id} item={item} index={index} onImageClick={() => {}} />
         ))}
         <div className="container" style={{ paddingBottom: 'var(--s10)' }}>
-          <Link className="wm-btn ghost" to="/portfolio">
-            Ver portfolio completo <span className="arrow">→</span>
+          <Link className="wm-btn ghost" to={paths.portfolio}>
+            {t.home.fullPortfolio} <span className="arrow">→</span>
           </Link>
         </div>
       </section>

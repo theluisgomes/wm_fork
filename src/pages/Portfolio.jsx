@@ -1,9 +1,12 @@
 import { useCallback, useMemo, useState } from 'react';
 import CaseCard from '../components/CaseCard.jsx';
 import Lightbox from '../components/Lightbox.jsx';
-import { cases } from '../data/cases.js';
+import { getCases } from '../data/cases.js';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 export default function Portfolio() {
+  const { lang, t } = useI18n();
+  const cases = getCases(lang);
   const [gallery, setGallery] = useState([]);
   const [index, setIndex] = useState(-1);
 
@@ -26,13 +29,12 @@ export default function Portfolio() {
       <section className="page-hero">
         <div className="page-grid-bg" aria-hidden="true" />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="eyebrow">Portfolio</span>
+          <span className="eyebrow">{t.portfolio.eyebrow}</span>
           <h1 className="page-title" style={{ marginTop: 'var(--s5)' }}>
-            Projetos onde método vira decisão, narrativa e produto.
+            {t.portfolio.title}
           </h1>
           <p className="page-intro">
-            Cases selecionados que mostram a metodologia Wisemetrics em estratégia de marca,
-            inteligência de dados e desenvolvimento de plataformas.
+            {t.portfolio.intro}
           </p>
         </div>
       </section>
@@ -42,9 +44,9 @@ export default function Portfolio() {
           <div className="cases-head section-head">
             <div className="num">01</div>
             <div>
-              <span className="eyebrow">Cases</span>
+              <span className="eyebrow">{t.portfolio.cases}</span>
               <h2 id="cases-h" className="s-title" style={{ marginTop: 'var(--s4)' }}>
-                A metodologia em prática.
+                {t.portfolio.subtitle}
               </h2>
             </div>
           </div>

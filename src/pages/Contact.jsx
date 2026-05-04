@@ -1,18 +1,21 @@
 import Button from '../components/Button.jsx';
 import OrbitCanvas from '../components/OrbitCanvas.jsx';
+import { useI18n } from '../i18n/I18nContext.jsx';
 
 export default function Contact() {
+  const { t, paths } = useI18n();
+
   return (
     <>
       <section className="page-hero">
         <div className="page-grid-bg" aria-hidden="true" />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="eyebrow">Contato</span>
+          <span className="eyebrow">{t.contact.eyebrow}</span>
           <h1 className="page-title" style={{ marginTop: 'var(--s5)' }}>
-            Vamos transformar dados em direção.
+            {t.contact.title}
           </h1>
           <p className="page-intro">
-            Conte um pouco sobre o desafio. A conversa começa pelo problema de negócio, não pela ferramenta.
+            {t.contact.intro}
           </p>
         </div>
       </section>
@@ -21,34 +24,34 @@ export default function Contact() {
         <div className="contato-glow" aria-hidden="true" />
         <OrbitCanvas className="contato-orbit-wrap" />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="eyebrow">Vamos conversar</span>
+          <span className="eyebrow">{t.contact.ctaEyebrow}</span>
           <h2 id="contato-h" className="contato-title">
-            Transformamos dados
+            {t.contact.ctaTitle1}
             <br />
-            <em>em direção.</em>
+            <em>{t.contact.ctaTitle2}</em>
           </h2>
           <p className="contato-sub">
-            Transformamos dados, sinais de mercado e percepção em posicionamento e crescimento institucional.
+            {t.contact.ctaSub}
           </p>
           <div className="contato-acts">
-            <Button href="mailto:contato@wisemetrics.com.br">Fale com a gente</Button>
-            <Button to="/portfolio" variant="ghost">Ver portfolio</Button>
+            <Button href="mailto:contato@wisemetrics.com.br">{t.contact.talk}</Button>
+            <Button to={paths.portfolio} variant="ghost">{t.contact.seePortfolio}</Button>
           </div>
         </div>
       </section>
 
       <section className="container" style={{ paddingBottom: 'var(--s12)' }}>
         <p id="privacidade" className="page-intro" style={{ marginBottom: 'var(--s5)' }}>
-          <strong>Política de privacidade.</strong>{' '}
-          Solicitações relacionadas à LGPD e ao tratamento de dados:{' '}
+          <strong>{t.contact.privacyLabel}</strong>{' '}
+          {t.contact.privacyBody}{' '}
           <a href="mailto:contato@wisemetrics.com.br" className="accent-link">
             contato@wisemetrics.com.br
           </a>
           .
         </p>
         <p id="termos" className="page-intro">
-          <strong>Termos de uso.</strong>{' '}
-          Projetos e entregas são regidos por contratos específicos com cada cliente. Dúvidas gerais pelo mesmo e-mail.
+          <strong>{t.contact.termsLabel}</strong>{' '}
+          {t.contact.termsBody}
         </p>
       </section>
     </>
