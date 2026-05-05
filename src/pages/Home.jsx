@@ -3,7 +3,7 @@ import { getCases } from '../data/cases.js';
 import { getServices } from '../data/services.js';
 import AmbientCanvas from '../components/AmbientCanvas.jsx';
 import Button from '../components/Button.jsx';
-import CaseCard from '../components/CaseCard.jsx';
+import PortfolioShowcase from '../components/PortfolioShowcase.jsx';
 import HeroCanvas from '../components/HeroCanvas.jsx';
 import Methodology from '../components/Methodology.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -14,7 +14,6 @@ export default function Home() {
   const { lang, t, paths } = useI18n();
   const cases = getCases(lang);
   const services = getServices(lang);
-  const featuredCases = cases.slice(0, 2);
 
   return (
     <>
@@ -95,9 +94,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        {featuredCases.map((item, index) => (
-          <CaseCard key={item.id} item={item} index={index} onImageClick={() => {}} />
-        ))}
+        <PortfolioShowcase cases={cases} />
         <div className="container" style={{ paddingBottom: 'var(--s10)' }}>
           <Link className="wm-btn ghost" to={paths.portfolio}>
             {t.home.fullPortfolio} <span className="arrow">→</span>

@@ -55,6 +55,8 @@ const baseTranslations = {
       portfolioEyebrow: 'Portfolio',
       portfolioTitle: 'A metodologia em prática.',
       portfolioIntro: 'Uma amostra dos projetos em que estratégia, dados e produto aparecem como uma mesma disciplina.',
+      portfolioCarouselLabel: 'Destaques visuais do portfolio',
+      portfolioOpenCase: 'Abrir case no portfolio',
       fullPortfolio: 'Ver portfolio completo',
     },
     about: {
@@ -155,6 +157,8 @@ const baseTranslations = {
       portfolioEyebrow: 'Portfolio',
       portfolioTitle: 'Methodology in practice.',
       portfolioIntro: 'A sample of projects where strategy, data, and product work as one discipline.',
+      portfolioCarouselLabel: 'Portfolio image highlights',
+      portfolioOpenCase: 'Open case in portfolio',
       fullPortfolio: 'See full portfolio',
     },
     about: {
