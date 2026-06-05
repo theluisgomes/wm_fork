@@ -1,0 +1,524 @@
+{
+  "generatedAt": "2026-06-05T03:07:46.524Z",
+  "projects": [
+    {
+      "slug": "penalty",
+      "order": 1,
+      "published": true,
+      "hero": "penalty_terminologia.png",
+      "heroSrc": "/projects/penalty/IMG/penalty_terminologia.png",
+      "images": [
+        {
+          "filename": "penalty_afinidade.png",
+          "src": "/projects/penalty/IMG/penalty_afinidade.png",
+          "alt": "penalty afinidade"
+        },
+        {
+          "filename": "penalty_engajamento.png",
+          "src": "/projects/penalty/IMG/penalty_engajamento.png",
+          "alt": "penalty engajamento"
+        },
+        {
+          "filename": "penalty_humores.png",
+          "src": "/projects/penalty/IMG/penalty_humores.png",
+          "alt": "penalty humores"
+        },
+        {
+          "filename": "penalty_terminologia.png",
+          "src": "/projects/penalty/IMG/penalty_terminologia.png",
+          "alt": "penalty terminologia"
+        }
+      ],
+      "pt": {
+        "title": "Penalty + M+C Saatchi Group",
+        "category": "Strategy & Growth",
+        "partner": "Parceiro estratégico",
+        "brief": "Como uma marca esportiva descobre onde ela realmente vive na cultura e onde pode crescer.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Leitura cultural aplicada",
+          "text": "Sinais públicos convertidos em territórios de posicionamento."
+        }
+      },
+      "en": {
+        "title": "Penalty + M+C Saatchi Group",
+        "category": "Strategy & Growth",
+        "partner": "Strategic partner",
+        "brief": "How a sports brand discovers where it truly lives in culture and where it can grow.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Applied cultural reading",
+          "text": "Public signals converted into positioning territories."
+        }
+      },
+      "meta": {
+        "title": "Penalty + M+C Saatchi Group",
+        "category": "Strategy & Growth",
+        "partner": "Strategic partner",
+        "brief": "How a sports brand discovers where it truly lives in culture and where it can grow.",
+        "hero": "penalty_terminologia.png",
+        "order": 1,
+        "proof": {
+          "title": "Applied cultural reading",
+          "text": "Public signals converted into positioning territories."
+        },
+        "url": null,
+        "link": null
+      }
+    },
+    {
+      "slug": "atmmos",
+      "order": 2,
+      "published": true,
+      "hero": "radar-mencoes.png",
+      "heroSrc": "/projects/atmmos/IMG/radar-mencoes.png",
+      "images": [
+        {
+          "filename": "radar-buscas.png",
+          "src": "/projects/atmmos/IMG/radar-buscas.png",
+          "alt": "radar buscas"
+        },
+        {
+          "filename": "radar-dimensionamento.png",
+          "src": "/projects/atmmos/IMG/radar-dimensionamento.png",
+          "alt": "radar dimensionamento"
+        },
+        {
+          "filename": "radar-mapa.png",
+          "src": "/projects/atmmos/IMG/radar-mapa.png",
+          "alt": "radar mapa"
+        },
+        {
+          "filename": "radar-mencoes.png",
+          "src": "/projects/atmmos/IMG/radar-mencoes.png",
+          "alt": "radar mencoes"
+        }
+      ],
+      "pt": {
+        "title": "Radar ATMMOS",
+        "category": "Data Insights & Intelligence",
+        "partner": "Parceiro estratégico",
+        "brief": "Primeira pesquisa de social listening sobre o comportamento dos brasileiros em relação ao Desmatamento.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Social listening como pauta",
+          "text": "Pesquisa, PR e liderança de pensamento numa mesma arquitetura."
+        }
+      },
+      "en": {
+        "title": "ATMMOS Radar",
+        "category": "Data Insights & Intelligence",
+        "partner": "Strategic partner",
+        "brief": "First social listening study on Brazilian behavior regarding deforestation.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Social listening as agenda",
+          "text": "Research, PR, and thought leadership in one architecture."
+        }
+      },
+      "meta": {
+        "title": "ATMMOS Radar",
+        "category": "Data Insights & Intelligence",
+        "partner": "Strategic partner",
+        "brief": "First social listening study on Brazilian behavior regarding deforestation.",
+        "hero": "radar-mencoes.png",
+        "order": 2,
+        "proof": {
+          "title": "Social listening as agenda",
+          "text": "Research, PR, and thought leadership in one architecture."
+        },
+        "url": null,
+        "link": null
+      }
+    },
+    {
+      "slug": "carvalho-hosken",
+      "order": 2,
+      "published": true,
+      "hero": "01-cover.png",
+      "heroSrc": "/projects/carvalho-hosken/IMG/01-cover.png",
+      "images": [
+        {
+          "filename": "01-cover.png",
+          "src": "/projects/carvalho-hosken/IMG/01-cover.png",
+          "alt": "01 cover"
+        },
+        {
+          "filename": "02-construction-team.png",
+          "src": "/projects/carvalho-hosken/IMG/02-construction-team.png",
+          "alt": "02 construction team"
+        },
+        {
+          "filename": "03-construction-site.png",
+          "src": "/projects/carvalho-hosken/IMG/03-construction-site.png",
+          "alt": "03 construction site"
+        },
+        {
+          "filename": "04-brand-application.png",
+          "src": "/projects/carvalho-hosken/IMG/04-brand-application.png",
+          "alt": "04 brand application"
+        },
+        {
+          "filename": "05-logo-monogram.png",
+          "src": "/projects/carvalho-hosken/IMG/05-logo-monogram.png",
+          "alt": "05 logo monogram"
+        },
+        {
+          "filename": "06-wordmark.png",
+          "src": "/projects/carvalho-hosken/IMG/06-wordmark.png",
+          "alt": "06 wordmark"
+        },
+        {
+          "filename": "07-billboard.png",
+          "src": "/projects/carvalho-hosken/IMG/07-billboard.png",
+          "alt": "07 billboard"
+        },
+        {
+          "filename": "08-lamp-post-banners.png",
+          "src": "/projects/carvalho-hosken/IMG/08-lamp-post-banners.png",
+          "alt": "08 lamp post banners"
+        },
+        {
+          "filename": "09-iphone-mockup.png",
+          "src": "/projects/carvalho-hosken/IMG/09-iphone-mockup.png",
+          "alt": "09 iphone mockup"
+        },
+        {
+          "filename": "10-tablet-nature.png",
+          "src": "/projects/carvalho-hosken/IMG/10-tablet-nature.png",
+          "alt": "10 tablet nature"
+        },
+        {
+          "filename": "11-tablet-development.png",
+          "src": "/projects/carvalho-hosken/IMG/11-tablet-development.png",
+          "alt": "11 tablet development"
+        },
+        {
+          "filename": "12-tote-bag.png",
+          "src": "/projects/carvalho-hosken/IMG/12-tote-bag.png",
+          "alt": "12 tote bag"
+        }
+      ],
+      "pt": {
+        "title": "Carvalho Hosken",
+        "category": "Brand Identity",
+        "partner": "",
+        "brief": "Redesenho da identidade visual da icônica Carvalho Hosken. Empresa responsável pelo desenvolvimento urbano da Barra da Tijuca no Rio de Janeiro. A CH busca uma integração de sua comunicação com os emp",
+        "url": null,
+        "link": null,
+        "proof": null
+      },
+      "en": {
+        "title": "Carvalho Hosken",
+        "category": "Brand Identity",
+        "partner": "",
+        "brief": "Redesign of the iconic Carvalho Hosken visual identity. The company is responsible for the urban development of Barra da Tijuca in Rio de Janeiro. CH sought to integrate its communication with its rea",
+        "url": null,
+        "link": null,
+        "proof": null
+      },
+      "meta": {
+        "title": "Carvalho Hosken",
+        "year": "2025",
+        "category": "Brand Identity",
+        "featured": true,
+        "order": 2,
+        "published": true,
+        "brief": "Redesign of the iconic Carvalho Hosken visual identity. The company is responsible for the urban development of Barra da Tijuca in Rio de Janeiro. CH sought to integrate its communication with its rea",
+        "url": null,
+        "link": null
+      }
+    },
+    {
+      "slug": "boticario",
+      "order": 3,
+      "published": true,
+      "hero": "boticario_analise.png",
+      "heroSrc": "/projects/boticario/IMG/boticario_analise.png",
+      "images": [
+        {
+          "filename": "boticario_analise.png",
+          "src": "/projects/boticario/IMG/boticario_analise.png",
+          "alt": "boticario analise"
+        },
+        {
+          "filename": "boticario_historico.png",
+          "src": "/projects/boticario/IMG/boticario_historico.png",
+          "alt": "boticario historico"
+        },
+        {
+          "filename": "boticario_recorte.png",
+          "src": "/projects/boticario/IMG/boticario_recorte.png",
+          "alt": "boticario recorte"
+        }
+      ],
+      "pt": {
+        "title": "O Boticário + ALMAPBBDO",
+        "category": "Product Development",
+        "partner": "Parceiro estratégico",
+        "brief": "Plataforma proprietária de planejamento de mídia OOH. Do dado bruto à decisão visual, em tempo real.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Inteligência operacionalizada",
+          "text": "Planejamento, scoring e auditoria visual no fluxo de decisão."
+        }
+      },
+      "en": {
+        "title": "O Boticario + ALMAPBBDO",
+        "category": "Product Development",
+        "partner": "Strategic partner",
+        "brief": "Proprietary OOH media planning platform, from raw data to visual decision in real time.",
+        "url": null,
+        "link": null,
+        "proof": {
+          "title": "Operationalized intelligence",
+          "text": "Planning, scoring, and visual audit in the decision flow."
+        }
+      },
+      "meta": {
+        "title": "O Boticario + ALMAPBBDO",
+        "category": "Product Development",
+        "partner": "Strategic partner",
+        "brief": "Proprietary OOH media planning platform, from raw data to visual decision in real time.",
+        "hero": "boticario_analise.png",
+        "order": 3,
+        "proof": {
+          "title": "Operationalized intelligence",
+          "text": "Planning, scoring, and visual audit in the decision flow."
+        },
+        "url": null,
+        "link": null
+      }
+    },
+    {
+      "slug": "beholder",
+      "order": 6,
+      "published": true,
+      "hero": "01-cover.png",
+      "heroSrc": "/projects/beholder/IMG/01-cover.png",
+      "images": [
+        {
+          "filename": "01-cover.png",
+          "src": "/projects/beholder/IMG/01-cover.png",
+          "alt": "01 cover"
+        },
+        {
+          "filename": "02-devices.png",
+          "src": "/projects/beholder/IMG/02-devices.png",
+          "alt": "02 devices"
+        },
+        {
+          "filename": "03-map-layers.png",
+          "src": "/projects/beholder/IMG/03-map-layers.png",
+          "alt": "03 map layers"
+        }
+      ],
+      "pt": {
+        "title": "Beholder",
+        "category": "Produto Digital",
+        "partner": "",
+        "brief": "Beholder é uma plataforma de inteligência geopolítica desenvolvida pela Wisemetrics para tornar os conflitos armados ao redor do mundo compreensíveis. Por meio de um mapa interativo, os usuários podem",
+        "url": "https://worldbeholder.manus.space",
+        "link": "https://worldbeholder.manus.space",
+        "proof": null
+      },
+      "en": {
+        "title": "Beholder",
+        "category": "Digital Product",
+        "partner": "",
+        "brief": "Beholder is a geopolitical intelligence platform built by Wisemetrics to make armed conflicts around the world understandable. Through an interactive map, users can explore the scale of each war, the ",
+        "url": "https://worldbeholder.manus.space",
+        "link": "https://worldbeholder.manus.space",
+        "proof": null
+      },
+      "meta": {
+        "title": "Beholder",
+        "year": "2026",
+        "category": "Digital Product",
+        "link": "https://worldbeholder.manus.space",
+        "linkLabel": "Explore platform",
+        "embed": "https://worldbeholder.manus.space",
+        "embedLabel": "Live preview",
+        "order": 6,
+        "published": true,
+        "brief": "Beholder is a geopolitical intelligence platform built by Wisemetrics to make armed conflicts around the world understandable. Through an interactive map, users can explore the scale of each war, the ",
+        "url": "https://worldbeholder.manus.space"
+      }
+    },
+    {
+      "slug": "landwatch",
+      "order": 7,
+      "published": true,
+      "hero": "01-cover.png",
+      "heroSrc": "/projects/landwatch/IMG/01-cover.png",
+      "images": [
+        {
+          "filename": "01-cover.png",
+          "src": "/projects/landwatch/IMG/01-cover.png",
+          "alt": "01 cover"
+        },
+        {
+          "filename": "02-dashboard.png",
+          "src": "/projects/landwatch/IMG/02-dashboard.png",
+          "alt": "02 dashboard"
+        },
+        {
+          "filename": "03-devices.png",
+          "src": "/projects/landwatch/IMG/03-devices.png",
+          "alt": "03 devices"
+        },
+        {
+          "filename": "04-showcase.png",
+          "src": "/projects/landwatch/IMG/04-showcase.png",
+          "alt": "04 showcase"
+        }
+      ],
+      "pt": {
+        "title": "LandWatch",
+        "category": "Produto Digital",
+        "partner": "",
+        "brief": "LandWatch é uma plataforma de monitoramento geoespacial para portfólios de terras agrícolas no Brasil. Utilizando embeddings de IA AlphaEarth Foundations — construídos a partir de dados Sentinel-1, Se",
+        "url": "https://landwatch-mvp.vercel.app",
+        "link": "https://landwatch-mvp.vercel.app",
+        "proof": null
+      },
+      "en": {
+        "title": "LandWatch",
+        "category": "Digital Product",
+        "partner": "",
+        "brief": "LandWatch is a geospatial monitoring platform for agricultural land portfolios in Brazil. Using AlphaEarth Foundations AI embeddings — built from Sentinel-1, Sentinel-2, Landsat, and climate data at 1",
+        "url": "https://landwatch-mvp.vercel.app",
+        "link": "https://landwatch-mvp.vercel.app",
+        "proof": null
+      },
+      "meta": {
+        "title": "LandWatch",
+        "year": "2025",
+        "category": "Digital Product",
+        "link": "https://landwatch-mvp.vercel.app",
+        "linkLabel": "View dashboard",
+        "embed": "https://landwatch-mvp.vercel.app",
+        "embedLabel": "Live preview",
+        "order": 7,
+        "published": true,
+        "brief": "LandWatch is a geospatial monitoring platform for agricultural land portfolios in Brazil. Using AlphaEarth Foundations AI embeddings — built from Sentinel-1, Sentinel-2, Landsat, and climate data at 1",
+        "url": "https://landwatch-mvp.vercel.app"
+      }
+    },
+    {
+      "slug": "thefutureof-cc",
+      "order": 8,
+      "published": true,
+      "hero": "01-cover.png",
+      "heroSrc": "/projects/thefutureof-cc/IMG/01-cover.png",
+      "images": [
+        {
+          "filename": "01-cover.png",
+          "src": "/projects/thefutureof-cc/IMG/01-cover.png",
+          "alt": "01 cover"
+        },
+        {
+          "filename": "02-mockup.png",
+          "src": "/projects/thefutureof-cc/IMG/02-mockup.png",
+          "alt": "02 mockup"
+        },
+        {
+          "filename": "03-screens.png",
+          "src": "/projects/thefutureof-cc/IMG/03-screens.png",
+          "alt": "03 screens"
+        }
+      ],
+      "pt": {
+        "title": "TheFutureOf.cc",
+        "category": "Estratégia & Editorial",
+        "partner": "",
+        "brief": "Análise Estratégica 2025-2035. Mapeando o atrito, o hype e a realidade da próxima década.",
+        "url": "https://thefutureof.cc",
+        "link": "https://thefutureof.cc",
+        "proof": null
+      },
+      "en": {
+        "title": "TheFutureOf.cc",
+        "category": "Strategy & Editorial",
+        "partner": "",
+        "brief": "Strategic Analysis 2025-2035. Mapping the friction, the hype, and the reality of the next decade.",
+        "url": "https://thefutureof.cc",
+        "link": "https://thefutureof.cc",
+        "proof": null
+      },
+      "meta": {
+        "title": "TheFutureOf.cc",
+        "year": "2025",
+        "category": "Strategy & Editorial",
+        "link": "https://thefutureof.cc",
+        "linkLabel": "Visit site",
+        "embed": "https://thefutureof.cc",
+        "embedLabel": "Live preview",
+        "order": 8,
+        "published": true,
+        "brief": "Strategic Analysis 2025-2035. Mapping the friction, the hype, and the reality of the next decade.",
+        "url": "https://thefutureof.cc"
+      }
+    },
+    {
+      "slug": "media-crm-performance",
+      "order": 11,
+      "published": true,
+      "hero": "01-cover.png",
+      "heroSrc": "/projects/media-crm-performance/IMG/01-cover.png",
+      "images": [
+        {
+          "filename": "01-cover.png",
+          "src": "/projects/media-crm-performance/IMG/01-cover.png",
+          "alt": "01 cover"
+        },
+        {
+          "filename": "02-devices.png",
+          "src": "/projects/media-crm-performance/IMG/02-devices.png",
+          "alt": "02 devices"
+        },
+        {
+          "filename": "03-engagement.png",
+          "src": "/projects/media-crm-performance/IMG/03-engagement.png",
+          "alt": "03 engagement"
+        }
+      ],
+      "pt": {
+        "title": "Media & CRM Performance",
+        "category": "Visualização de Dados",
+        "partner": "",
+        "brief": "Este Dashboard de Performance de Mídia e Engajamento CRM é uma plataforma analítica executiva em tela cheia, de alta fidelidade, construída especificamente para monitorar, atribuir e otimizar investim",
+        "url": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "link": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "proof": null
+      },
+      "en": {
+        "title": "Media & CRM Performance",
+        "category": "Data Visualization",
+        "partner": "",
+        "brief": "This Media Performance & CRM Engagement Dashboard is a high-fidelity, full-screen executive analytics platform built specifically to monitor, attribute, and optimize media investments, audience video ",
+        "url": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "link": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "proof": null
+      },
+      "meta": {
+        "title": "Media & CRM Performance",
+        "year": "2026",
+        "category": "Data Visualization",
+        "link": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "linkLabel": "View dashboard",
+        "embed": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/",
+        "embedLabel": "Live preview",
+        "order": 11,
+        "published": true,
+        "brief": "This Media Performance & CRM Engagement Dashboard is a high-fidelity, full-screen executive analytics platform built specifically to monitor, attribute, and optimize media investments, audience video ",
+        "url": "https://dashboard-de-campanha-jeep-67354348019.us-west1.run.app/"
+      }
+    }
+  ]
+}

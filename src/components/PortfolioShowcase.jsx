@@ -28,7 +28,7 @@ export default function PortfolioShowcase({ cases }) {
         c.images.map((img) => ({
           src: img.src,
           alt: img.alt,
-          caseId: c.id,
+          caseId: c.slug ?? c.id,
           caseTitle: c.title,
           category: c.category,
         })),
@@ -66,7 +66,7 @@ export default function PortfolioShowcase({ cases }) {
             {slides.map((slide, index) => (
               <div className="port-show-slide" role="listitem" key={`${slide.caseId}-${slide.src}-${index}`}>
                 <Link
-                  to={`${paths.portfolio}#${slide.caseId}`}
+                  to={`${paths.portfolio}/${slide.caseId}`}
                   className="port-show-card"
                   aria-label={`${t.home.portfolioOpenCase}: ${slide.caseTitle}`}
                 >

@@ -77,6 +77,13 @@ const baseTranslations = {
       cases: 'Cases',
       subtitle: 'A metodologia em prática.',
     },
+    project: {
+      backToPortfolio: '← Portfolio',
+      livePreview: 'Preview ao vivo',
+      openLiveSite: 'Abrir site ao vivo',
+      gallery: 'Galeria',
+      notFound: 'Projeto não encontrado',
+    },
     contact: {
       eyebrow: 'Contato',
       title: 'Vamos transformar dados em direção.',
@@ -178,6 +185,13 @@ const baseTranslations = {
       intro: 'Selected cases that show Wisemetrics methodology across brand strategy, data intelligence, and platform development.',
       cases: 'Cases',
       subtitle: 'Methodology in practice.',
+    },
+    project: {
+      backToPortfolio: '← Portfolio',
+      livePreview: 'Live preview',
+      openLiveSite: 'Open live site',
+      gallery: 'Gallery',
+      notFound: 'Project not found',
     },
     contact: {
       eyebrow: 'Contact',

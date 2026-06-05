@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button.jsx';
 import OrbitCanvas from './OrbitCanvas.jsx';
 import Logo from './Logo.jsx';
+import { getProjects } from '../lib/projects.js';
 import { useI18n } from '../i18n/I18nContext.jsx';
 
 function SocialIcon({ type }) {
@@ -21,7 +22,8 @@ function SocialIcon({ type }) {
 }
 
 export default function Footer() {
-  const { t, paths } = useI18n();
+  const { lang, t, paths } = useI18n();
+  const featuredProjects = getProjects(lang).slice(0, 3);
 
   return (
     <footer>
@@ -56,9 +58,11 @@ export default function Footer() {
           <div className="foot-col">
             <div className="foot-col-label">{t.footer.work}</div>
             <ul>
-              <li><Link to="/portfolio#penalty">Penalty + M+C Saatchi</Link></li>
-              <li><Link to="/portfolio#atmmos">Radar ATMMOS</Link></li>
-              <li><Link to="/portfolio#boticario">O Boticário + ALMAPBBDO</Link></li>
+              {featuredProjects.map((project) => (
+                <li key={project.slug}>
+                  <Link to={`${paths.portfolio}/${project.slug}`}>{project.title}</Link>
+                </li>
+              ))}
               <li><Link to={`${paths.about}#parceiros`}>{t.partners.section}</Link></li>
             </ul>
           </div>

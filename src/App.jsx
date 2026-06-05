@@ -5,6 +5,7 @@ import Layout from './components/Layout.jsx';
 const Home = lazy(() => import('./pages/Home.jsx'));
 const About = lazy(() => import('./pages/About.jsx'));
 const Portfolio = lazy(() => import('./pages/Portfolio.jsx'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 
 function ScrollToTop() {
@@ -51,6 +52,7 @@ export default function App() {
             <Route path="sobre" element={<About />} />
             <Route path="about" element={<About />} />
             <Route path="portfolio" element={<Portfolio />} />
+            <Route path="portfolio/:slug" element={<ProjectDetail />} />
             <Route path="contato" element={<Contact />} />
             <Route path="contact" element={<Contact />} />
           </Route>

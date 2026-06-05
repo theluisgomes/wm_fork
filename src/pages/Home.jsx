@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { getCases } from '../data/cases.js';
+import { getProjects } from '../lib/projects.js';
 import { getServices } from '../data/services.js';
 import AmbientCanvas from '../components/AmbientCanvas.jsx';
 import Button from '../components/Button.jsx';
@@ -12,7 +12,7 @@ import { useI18n } from '../i18n/I18nContext.jsx';
 
 export default function Home() {
   const { lang, t, paths } = useI18n();
-  const cases = getCases(lang);
+  const cases = getProjects(lang);
   const services = getServices(lang);
 
   return (
